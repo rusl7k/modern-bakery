@@ -1,0 +1,55 @@
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}
+
+/* .form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+} */
+
+/* .form-input:placeholder-shown {
+  background-color: blue;
+} */
+/* make input transparent if it disabled*/
+/* .form-input:disabled {
+  border-color: lightgray;
+}
+.form-input:disabled::placeholder {
+  color: lightcyan;
+} */
+
+/* for hidden something*/
+/* .checkbox-input {
+  appearance: none; 
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: greenyellow;
+  background-image: url();
+}
+
+.checkbox {
+  position: relative;
+}
+.checkbox-label {
+  padding-left: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-brand-dark);
+  border-radius: 2px;
+  content: '';
+} */

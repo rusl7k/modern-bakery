@@ -1,0 +1,46 @@
+@import './utilities/variables';
+@import './utilities/fonts';
+
+@import './base';
+@import './utilities/texts';
+@import './utilities/utilities';
+
+@import './components/buttons';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './components/input';
+@import './components/links';
+@import './components/pagination';
+
+@import './utilities/mixins';
+
+/*when button not-allowed show visually*/
+/* .button[disabled] {
+  background-color: grey;
+  cursor: not-allowed;
+} */
+
+@import './layouts/section';
+@import './layouts/container';
+
+@import './layouts/advantages-section';
+
+@import './layouts/traditions-section';
+
+@import './layouts/chefs-section';
+@import './components/chef-card';
+
+@import './layouts/formats-section';
+@import './components/format-card';
+@import './components/icon-close';
+
+@import './components/carousel-button';
+
+@import './layouts/contact-section';
+
+@import './layouts/footer';
+
+@import './layouts/mobile-menu';
+@import './layouts/modal';
+
+@import './layouts/forms-terms';

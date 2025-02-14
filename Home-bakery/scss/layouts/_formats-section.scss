@@ -1,0 +1,23 @@
+.formats-section {
+  &__slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__button {
+    visibility: hidden;
+
+    @media screen and (min-width: $bp-tablet) {
+      visibility: visible;
+      display: flex;
+    }
+  }
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+}

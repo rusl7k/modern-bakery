@@ -1,0 +1,147 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-image: url('../images/footer-background.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+  }
+  &::before {
+    width: 92px;
+    height: 196px;
+    top: 0;
+    left: 0;
+    background-image: url('/images/decor-bread-big-mobile.png');
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 180px;
+      height: 120px;
+      left: 0;
+      top: 134px;
+      background-image: url('/images/decor-bread-small.png');
+    }
+  }
+
+  &::after {
+    width: 102px;
+    height: 91px;
+    right: 0;
+    background-image: url('/images/decor-bread-small-mobile.png');
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 380px;
+      height: 190px;
+      right: 0;
+      background-image: url('/images/decor-bread-big.png');
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 20px;
+      flex-direction: row;
+    }
+  }
+  &__logo {
+    margin-bottom: 14px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
+  }
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+  &__address-contacts {
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      text-align: start;
+      max-width: 211px;
+    }
+  }
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+  &__link {
+    &:not(:first-child) {
+      margin-top: 18px;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-top: 16px;
+      }
+    }
+  }
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
+  &__address-icons {
+    display: flex;
+    gap: 22px;
+    width: 86px;
+    margin: 16px auto 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 16px 0 0 0;
+    }
+  }
+  &__address-icon {
+    fill: var(--color-primary-light);
+    /* stroke: red; wrapper remove */
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
+  &__address-info {
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: end;
+    }
+  }
+  &__address-copyright {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    margin: 8px 0 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+      margin: 16px 0 0;
+    }
+  }
+}
